@@ -43,14 +43,13 @@ LIM_Z   <- 6     # desvios robustos (MAD) dentro da própria série
 
 ```
 
-
 ## Leitura
 
 ```{r}
 
-uniao <- rio::import(here::here("02.metadata/pop_uniao_es.rds"), trusted = TRUE)
-ccaa <- rio::import(here::here("02.metadata/pop_regional_es.rds"), trusted = TRUE)
-municipios <- rio::import(here::here("02.metadata/pop_local_es.rds"), trusted = TRUE)
+uniao <- rio::import(here::here("population/02.metadata/pop_uniao_es.rds"), trusted = TRUE)
+ccaa <- rio::import(here::here("population/02.metadata/pop_regional_es.rds"), trusted = TRUE)
+municipios <- rio::import(here::here("population/02.metadata/pop_local_es.rds"), trusted = TRUE)
 
 anos_cols <- names(municipios)[str_detect(names(municipios), "^\\d{4}$")]
 
