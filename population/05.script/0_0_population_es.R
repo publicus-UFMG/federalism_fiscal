@@ -157,7 +157,7 @@ message("Soma das CCAA = total nacional? ",
 
 # Exportação com o pacote rio:
 
-export(uniao, "02.metadata/pop_uniao_es.rds")
-export(ccaa, "02.metadata/pop_regional_es.rds")
-export(municipios, "02.metadata/pop_local_es.rds")
+export(uniao, "population/02.metadata/pop_uniao_es.rds")
+export(ccaa, "population/02.metadata/pop_regional_es.rds")
+export(municipios, "population/02.metadata/pop_local_es.rds")
 
